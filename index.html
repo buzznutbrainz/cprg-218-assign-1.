@@ -10,13 +10,33 @@
   <link rel="stylesheet" type="text/css" href="styles/assignment-one-starter.css">
   <link rel="stylesheet" type="text/css" href="styles/assignment_one.css">
   <link rel="stylesheet" type="text/css" href="styles/lab_three.css">
-  <title>Responsive CSS Layout</title>
+  <link rel="stylesheet" href="https://use.typekit.net/der2qpe.css">
+  <title>Bawz</title>
+  
 </head>
 <body>
-  <div class="header-container">
-    <h1>Assignment 1</h1>
-    <h2>Responsive CSS Layout</h2>
+
+  <section class="hero-banner">
+    <div class="hero">
+      >
+      <img src="assets/skate.jpg" alt="Hero Image">
+      <div class="hero-text">
+          <h1>BAWZ</h1>
+          <h2>My Studio of Studios</h2>
+      </div>
   </div>
+
+</section>
+
+
+<section class="content-section">
+  <div class="content"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel nisi ut magna cursus dapibus nec at nulla.</p>
+    <button>Read More</button>
+</section>
+
+
+  </body>
   <section class="container">
     <ul class="card-container">
       <li class="card">
@@ -146,14 +166,65 @@
         </div>
       </li>
     </ul>
-  </section>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/KmQrkoUOmZY?si=FHcwsTBIikl7Sbty" frameborder="0" allowfullscreen></iframe>
+
+
+<section class="accordion">
+  <h3>Some Questions I Am Answering For You Free of Charge:</h3>
+<div class="accordion">
+  <div class="accordion-item">
+    <div class="accordion-heading">Where was I born?</div>
+    <div class="accordion-content">
+      <p>Tehran, Iran.</p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-heading">When did I start painting? </div>
+    <div class="accordion-content">
+      <p>About three years ago!</p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-heading">What is something that stops me from painting?</div>
+    <div class="accordion-content">
+      <p>This assignment.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const accordionItems = document.querySelectorAll(".accordion-item");
+
+    accordionItems.forEach(item => {
+      item.addEventListener("click", function() {
+      
+        this.querySelector(".accordion-content").classList.toggle("active");
+      });
+    });
+  });
+</script>
+
+</body>
+</section>
+
+<section class="footer">
+  <footer class="footer">
+    <div class="container">
+    <nav>
+      <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Purchase</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+  </nav>
+ 
   </div>
 
-  <div class="footer">
-    <p>Copyright 2024 Ava Ehtesham-Heravi (Buzznut Art) </p>
-  </div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d80180.47016335146!2d-114.2458947047973!3d51.09665669224163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d51.064265899999995!2d-114.1233482!4m5!1s0x537169432e992001%3A0x811525d5a27669f6!2sParty%20City%2C%20111%20Crowfoot%20Terrace%20NW%2C%20Calgary%2C%20AB%20T3G%202L5!3m2!1d51.1274618!2d-114.20346669999999!5e0!3m2!1sen!2sca!4v1709875614195!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <p>Copyright 2024 Ava Ehtesham-Heravi (Buzznut Art) </p>
+</section>
 
 </body>
 </html>
